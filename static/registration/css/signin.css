@@ -1,7 +1,8 @@
 body {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #eee;
+  color: #f8f8f8;
+  background-color: #e86c19;
 }
 
 .form-signin {
@@ -37,4 +38,10 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.my-message-box {
+  max-width: 350px;
+  padding: 15px;
+  margin: 0 auto;
 }

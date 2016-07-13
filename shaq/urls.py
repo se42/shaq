@@ -20,7 +20,7 @@ from django.shortcuts import render
 
 urlpatterns = [
     url(r'^$', lambda request: render(request, 'landing_page/landing_page.html')),
-    url(r'^', include('django.contrib.auth.urls')),
-    url(r'^home$', lambda request: render(request, 'shaq/shaq_home.html')),
+    url(r'^accounts/', include('django.contrib.auth.urls')),
+    url(r'^home$', lambda request: render(request, 'shaq/shaq_home.html'), name='site_home'),
     url(r'^admin/', admin.site.urls),
 ]

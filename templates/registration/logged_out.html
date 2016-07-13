@@ -1,0 +1,8 @@
+{% extends 'registration/registration_base.html' %}
+
+{% block main_content %}
+  <div class="container text-center my-message-box">
+    <h2 class="form-signin-heading">Logout Successful</h2>
+    <a class="btn btn-default btn-block" href="{% url 'login' %}" role="button">Login Again</a>
+  </div>
+{% endblock main_content %}
