@@ -1,8 +1,9 @@
+/* From getbootstrap.com signin.css template */
 body {
   padding-top: 40px;
   padding-bottom: 40px;
-  color: #f8f8f8;
-  background-color: #e86c19;
+  /*color: #f8f8f8;*/
+  background-color: #fae1d1;
 }
 
 .form-signin {
@@ -40,6 +41,7 @@ body {
   border-top-right-radius: 0;
 }
 
+/* Custom message box for containing non-form text */
 .my-message-box {
   max-width: 350px;
   padding: 15px;

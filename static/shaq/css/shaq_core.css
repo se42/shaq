@@ -1,0 +1,11 @@
+/* CUSTOMIZATIONS TO SB_ADMIN_2 BUILT IN CLASSES */
+
+/* Replaces commented out lines 83-86 of sb_admin_2.css */
+.navbar-top-links .dropdown-user {
+    /*right: 0;*/
+    /*left: auto;*/
+    margin-left: 5px;
+}
+
+
+/* FREE STANDING CUSTOMIZATIONS */
