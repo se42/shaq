@@ -18,9 +18,15 @@ from django.contrib import admin
 # from django.contrib.auth import urls as auth_urls
 from django.shortcuts import render
 
+from .utils import active_login_required
+
+@active_login_required
+def protected_home(request):
+    return render(request, 'shaq/shaq_home.html')
+
 urlpatterns = [
     url(r'^$', lambda request: render(request, 'landing_page/landing_page.html')),
     url(r'^accounts/', include('django.contrib.auth.urls')),
-    url(r'^home$', lambda request: render(request, 'shaq/shaq_home.html'), name='site_home'),
+    url(r'^home$', protected_home, name='site_home'),
     url(r'^admin/', admin.site.urls),
 ]
