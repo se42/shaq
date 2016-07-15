@@ -1,17 +1,21 @@
 {% extends 'registration/registration_base.html' %}
 
-{% load bootstrap3 %}
+{% load crispy_forms_tags %}
 
 {% block main_content %}
+
   <div class="container my-message-box text-center">
     <h2>Please login to continue.</h2>
   </div>
 
   <form action="{% url 'login' %}" method="post" class="form form-signin">
     {% csrf_token %}
-    {% bootstrap_form form %}
-    {% buttons %}
-      <button type="submit" class="btn btn-default btn-block">Login</button>
-    {% endbuttons %}
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-default btn-block">Login</button>
   </form>
+
+  <div class="container my-message-box text-center">
+    <a class="btn btn-default btn-block" href="{% url 'site_landing_page' %}" role="button">Back to SHAQ Landing</a>
+  </div>
+
 {% endblock main_content %}

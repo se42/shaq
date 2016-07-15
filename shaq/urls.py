@@ -25,7 +25,7 @@ def protected_home(request):
     return render(request, 'shaq/shaq_home.html')
 
 urlpatterns = [
-    url(r'^$', lambda request: render(request, 'landing_page/landing_page.html')),
+    url(r'^$', lambda request: render(request, 'landing_page/landing_page.html'), name='site_landing_page'),
     url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^home$', protected_home, name='site_home'),
     url(r'^admin/', admin.site.urls),

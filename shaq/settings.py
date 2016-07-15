@@ -19,6 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 LOGIN_REDIRECT_URL = 'site_home'
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 
 # Application definition
@@ -30,7 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bootstrap3',
+    'crispy_forms',
 ]
 
 MIDDLEWARE_CLASSES = [
